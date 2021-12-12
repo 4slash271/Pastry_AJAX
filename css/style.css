@@ -22,6 +22,7 @@
     --blue:#6F73D5;
     --white:#fff;
     --black:#090A1A;
+    --gray:#F5F5F1;
     --shadow:4px 7px 21px -2px rgba(102,102,102,0.78);
 }
 @font-face { 
@@ -33,15 +34,15 @@
 
 
 body{
-    border:1px solid hotpink;
     position: relative;
-    width: 100%;
-    height: 900px;
-    font-family: 'Messapia-Bold';
-    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 900px;
+    background-color: var(--gray);
+    font-family: 'Messapia-Bold';
+    border:1px solid hotpink;
 }
 /********************************************************************/
 
@@ -74,8 +75,8 @@ body{
     width: 100em;
     height: 100em;
     bottom: -60em;
-    /* background-color: var(--red); */
-    background: radial-gradient(#DA4D4D 40%, #f19180ea 60%, #DA4D4D 80%) ;
+    background-color: var(--red);
+    /* background: radial-gradient(#DA4D4D 40%, #f19180ea 60%, #DA4D4D 80%) ; */
     border: 15px double var(--white);
     border-radius: 50%; 
 }
