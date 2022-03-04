@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
@@ -13,17 +14,18 @@ body {
 /********************************************************************/
 
 /********************************************************************/
-.text-wrapper {
+.line {
   overflow: hidden;
   /* font-family: 'Messapia-Regular'; */
   width: 100%;
-  height: 5em;
+  height: 5.5em;
   background-color: var(--black);
   color: var(--white);
   line-height: 1.3;
+  letter-spacing: 1.5em;
   /* border: 4.5px double var(--white); */
 }
-.text-wrapper span {
+.line span {
   font-size: 0.9em;
 }
 
