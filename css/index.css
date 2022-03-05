@@ -15,20 +15,37 @@ body {
 
 /********************************************************************/
 .line {
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   /* font-family: 'Messapia-Regular'; */
   width: 100%;
-  height: 5.5em;
+  height: fit-content;
   background-color: var(--black);
   color: var(--white);
   line-height: 1.3;
   letter-spacing: 1.5em;
-  /* border: 4.5px double var(--white); */
+  /* padding: 0 4em; */
+  border: 4.5px solid var(--white);
 }
 .line span {
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
-
+.circle {
+  flex-wrap: wrap;
+  /* width: 1em; */
+  /* height: 2em; */
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  margin: 0.1em;
+}
+.circle:nth-child(1) {
+  padding-left: 1em;
+  /* margin: 0.1em; */
+}
 /********************************************************************/
 .mail-wrapper {
   position: absolute;
