@@ -28,11 +28,14 @@ body {
   /* padding: 0 4em; */
   border: 4.5px solid var(--white);
 }
-.line span {
+.line__text {
   font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .circle {
-  flex-wrap: wrap;
+  justify-content: center;
   /* width: 1em; */
   /* height: 2em; */
   border-radius: 50%;
@@ -40,10 +43,11 @@ body {
   background-color: var(--black);
   color: var(--white);
   text-align: center;
-  margin: 0.1em;
+  /* margin: 0.1em; */
+  padding: 0 0em 0 01.2em;
 }
 .circle:nth-child(1) {
-  padding-left: 1em;
+  /* padding-left: 1em; */
   /* margin: 0.1em; */
 }
 /********************************************************************/
