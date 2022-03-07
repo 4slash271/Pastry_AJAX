@@ -1,35 +1,52 @@
-const mail = document.querySelector('.mail-wrapper .mail');
-const mailWrap= document.querySelector('.mail-wrapper');
-const mailStage= document.querySelector('.mail-stage');
+
 const lineTxt = document.querySelector('.line .line__text');
-const letter = 'Pastry~AJAX~KimSulki~&~KeemHeejoo';
+const letter = 'Pastry/AJAX/Sulki&Heejoo';
+const colors = ["#7A827F", "#3E4241", "#B7C3BF", "#9EA8A5","#706F6F"]
 
-const randomColors = "#57E653"
 
-
+/*************************** line ***********************************/
 let arr = letter.split('');//letter를 하나씩 분절
-// console.log(arr="p");
+console.log(arr);
 
-// document.body.style.backgroundColor= "#" + Math.ceil(Math.random() * 0xffffff).toString(16);
-// body.document.style.backgroundColor = "#" + Math.ceil(Math.random() * 0xffffff).toString(16);
-
-for(var i=0; i<arr.length-1; i++){
-        lineTxt.innerHTML += '<span class="circle">'+' '+ arr[i] +'</span>';
-        }
-let circle =document.querySelectorAll('.circle');
-console.log(circle);
-
-function openMail(e){
-    window.location.href = "http://127.0.0.1:5500/html/mail.html"
+for(var i=0; i<arr.length; i++){
+    lineTxt.innerHTML += '<span class="circle">'+ arr[i] +'</span>';
 }
 
+randomColor();
+function randomColor(){
+    setInterval(changeColor, 1000)//일정한 시간을 간격으로 작업을 계속 실행.
+}
+    function changeColor(){
+        lineTxt.children[7].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        lineTxt.children[8].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        lineTxt.children[9].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        lineTxt.children[10].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];        
+    }
+/*************************** mail ***********************************/
+const mailWrap= document.querySelector('.mail');
+const mailStage= document.querySelector('.mail__outer');
+const mail = document.querySelectorAll('.mail .mail__opc--doc');
+[].forEach.call(mail, function(e){ 
+    e.addEventListener("click", 
+    function(){ 
+    
+        openMail(mail, e);}
+    )
+          
+    });
+  function openMail(mail, e){
+        
+      window.location.href = "http://127.0.0.1:5500/html/mail.html"
+  }  
+   
+ 
 function stopRotate(){
     mailStage.classList.remove('rotate');
 }
 function startRotate(){
     mailStage.classList.add('rotate');
 }
-mail.addEventListener('click', openMail);
+
 mailWrap.addEventListener('mouseenter', stopRotate);
 mailWrap.addEventListener('mouseleave', startRotate);
 

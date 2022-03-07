@@ -7,7 +7,7 @@ body {
   align-items: center;
   width: 100%;
   height: 900px;
-  background-color: var(--gray);
+  /* background-color: var(--gray); */
   font-family: 'Messapia-Bold';
   /* border: 1px solid hotpink; */
 }
@@ -32,6 +32,7 @@ body {
   font-size: 1.3em;
   display: flex;
   flex-direction: row;
+  /* justify-content: center; */
   flex-wrap: wrap;
 }
 .circle {
@@ -51,7 +52,7 @@ body {
   /* margin: 0.1em; */
 }
 /********************************************************************/
-.mail-wrapper {
+.mail {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -64,7 +65,7 @@ body {
   border: 15px double var(--white);
   border-radius: 50%;
 }
-.mail-stage {
+.mail__outer {
   display: flex;
   align-items: center;
   width: 60em;
@@ -85,21 +86,21 @@ body {
   }
 }
 
-.mail-dish {
+.mail__inner {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   z-index: 99;
 }
-.mail-pc {
+.mail__opc {
   position: absolute;
   width: 50%;
   height: 50%;
   transform-origin: 100% 100%;
 }
 
-.mail {
+.mail__opc--doc {
   position: absolute;
   width: 15em;
   height: 12em;
