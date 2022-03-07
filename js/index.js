@@ -23,9 +23,9 @@ function randomColor(){
         lineTxt.children[10].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];        
     }
 /*************************** mail ***********************************/
-const mailWrap= document.querySelector('.mail');
-const mailStage= document.querySelector('.mail__outer');
-const mail = document.querySelectorAll('.mail .mail__opc--doc');
+const mailWrap= document.querySelector('.mails');
+const mailStage= document.querySelector('.mails__outer');
+const mail = document.querySelectorAll('.mails .mail');
 [].forEach.call(mail, function(e){ 
     e.addEventListener("click", 
     function(){ 
