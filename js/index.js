@@ -22,31 +22,4 @@ function randomColor(){
         lineTxt.children[9].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         lineTxt.children[10].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];        
     }
-/*************************** mail ***********************************/
-const mailWrap= document.querySelector('.mails');
-const mailStage= document.querySelector('.mails__outer');
-const mail = document.querySelectorAll('.mails .mail');
-[].forEach.call(mail, function(e){ 
-    e.addEventListener("click", 
-    function(){ 
-    
-        openMail(mail, e);}
-    )
-          
-    });
-  function openMail(mail, e){
-        
-      window.location.href = "http://127.0.0.1:5500/html/mail.html"
-  }  
-   
- 
-function stopRotate(){
-    mailStage.classList.remove('rotate');
-}
-function startRotate(){
-    mailStage.classList.add('rotate');
-}
-
-mailWrap.addEventListener('mouseenter', stopRotate);
-mailWrap.addEventListener('mouseleave', startRotate);
 
