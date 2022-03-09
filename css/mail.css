@@ -1,26 +1,56 @@
-body{
-    /* position: relative; */
-    
-    width: 100%;
-    height: 900px;
-    background-color: var(--gray);
-    font-family: 'Messapia-Bold';
+.main {
+  position: absolute;
+  top: 7em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: fit-content;
+  /* margin: 1em; */
+  padding: 0.5em;
+  border: 1px solid red;
 }
-
-
-.parts{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    align-items:flex-start;
-    width: 100%;
-    border:1px solid hotpink;
+.main__text {
+  width: 100%;
 }
-.part{
-    border:1px solid hotpink;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.main__text--title {
+  display: flex;
+  align-items: center;
+  height: 5em;
+  font-size: 1.5em;
+}
+.main__text--writer {
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+}
+.writer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 1em 1em 1em 0;
+}
+.writer__name {
+  font-family: 'SUIT';
+}
+.writer__address {
+  font-family: 'SUIT';
+  margin-left: 0.3em;
+}
+.writer__dear {
+  width: 100%;
+  color: #888;
+}
+.main__text--desc {
+  font-family: 'SUIT';
+  margin: 1.5em 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.main__photo {
+  width: 100%;
+  height: 18em;
+  margin-bottom: 2em;
+  border: 1px solid rgb(255, 47, 238);
 }
