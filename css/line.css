@@ -40,12 +40,12 @@
 .circle {
   justify-content: center;
   /* width: 1em; */
-  /* height: 2em; */
+  height: 2em;
   border-radius: 50%;
   border: 3px solid var(--white);
   background-color: var(--black);
   color: var(--white);
   text-align: center;
   /* margin: 0.1em; */
-  padding: 0 0em 0 01.2em;
+  padding: 0.35em 0 0 01.22em;
 }
