@@ -87,8 +87,7 @@
 .ref {
   position: absolute;
   top: 15em;
-  left: 35em;
-
+  left: 50em;
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,9 +95,10 @@
   width: 40%;
   gap: 20px;
   height: fit-content;
-  border: 1px solid salmon;
   font-family: 'SUIT';
   font-size: 0.8em;
+  box-shadow: 15px 5px 15px 2px rgba(131, 169, 170, 0.089);
+  border: 1px solid rgba(170, 169, 169, 0.411);
 }
 .switch {
   visibility: hidden;
@@ -106,16 +106,17 @@
 .ref__movie {
   position: relative;
   margin: 0.5em;
-  /* background-color: rgb(255, 255, 255); */
-  border-radius: 15px;
 }
-/* .ref__movie span {
-  padding-top: 1em;
-} */
+.ref__movie span {
+  background-color: #feffeb;
+  padding: 0.2em;
+  line-height: 1.5;
+  border: 1px solid #666;
+}
 
 .ref__movie img {
   width: 100%;
-  height: 80%;
+  height: 90%;
 }
 /***************************   photo   **********************/
 .main__photo {
