@@ -75,12 +75,15 @@
   line-height: 1.5;
 }
 .highlight1:hover {
+  cursor: pointer;
   background: linear-gradient(#fff 0%, #e6fd19 100%);
 }
 .highlight2:hover {
+  cursor: pointer;
   background: linear-gradient(#fff 0%, #39c9928a 100%);
 }
 .highlight3:hover {
+  cursor: pointer;
   background: linear-gradient(#fff 0%, #e608fa8a 100%);
 }
 /***************************   main-reference   **********************/

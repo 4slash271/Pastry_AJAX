@@ -26,8 +26,8 @@
         .heading{
             z-index: 3;
             position: fixed;
-             top: 25vh;
-            left: 5em;
+             top: 30vh;
+            right: 32em;
         }
         .heading__icon{
             text-align: center;
@@ -36,6 +36,9 @@
             height: 3.5em;
             transform: rotateX(180deg);
             transform: rotateZ(180deg);
+        }
+        .heading__icon:hover{
+            cursor: pointer;
         }
         .heading i{
             font-size:3.5em;
@@ -46,21 +49,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* z-index: 99; */
             position: absolute;
             padding: 0.5em;
             width: 200%;
-            top: 1.8em;
-            left: 1.5em;
-            
+            top: 4em;
+            left: -2em;
         }
         .tag__text {    
-               
-          /* z-index: 8; */
           border: 1px solid #666;
           background-color: #feffeb;
-          /* padding: 0.3em; */
-          /* line-height: 1.5; */
         }
         .main__text{
             font-family: 'SUIT';
@@ -75,17 +72,17 @@
             position: absolute;
             top: 15em;
             left: 27em;
-            line-height: 1.2;
+            line-height: 1.3;
         }
         .main__photo{
-/*           
-            width: 100%;
-            height: 100vh; */
-           
+            position: absolute;
+            transform: translateY(100%);
+            /* border: 3px solid rgb(200, 255, 0); */
             background: url(../src/img/proposal_back.png) no-repeat center;
             background-size: contain;
         }
         .main__photo--img{
+            /* border: 2px solid rgb(0, 17, 255); */
             background-color: rgba(0, 0, 0, 0.76);
             width: 100%;
             height: 100vh;
@@ -124,7 +121,7 @@
                </span> 
             </div>
         </div>
-            <div class="main__text">
+            <div id="text" class="main__text">
                 <span class="main__text--desc">
                     0626  희주 ->슬기
                     <br>
@@ -153,7 +150,7 @@
                 </span>        
             </div>
 
-            <div class="main__photo">
+            <div id="photo" class="main__photo">
                 <div class="main__photo--img">
                     <img src="../src/img/from heejoo.png" alt="">
                     </div> 
@@ -161,6 +158,7 @@
     </div>  
  
 <script src="../js/index.js"></script>
-<script src="../js/ref.js"></script>
+<script src="../js/mail2.js"></script>
+
 </body>
 </html>
