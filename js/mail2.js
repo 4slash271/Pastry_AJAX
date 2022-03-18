@@ -43,11 +43,6 @@ heading.addEventListener('click',function(e){
         heading.style.color ="#090a1a"
         tag.innerText = "아래로 스크롤!"
     }
-
-    
-    console.log(scrollLocation);
-    
-
 	
 })
 
