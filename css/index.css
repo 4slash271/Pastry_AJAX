@@ -1,6 +1,7 @@
 body {
   position: relative;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,31 +13,45 @@ body {
 
 /********************************************************************/
 
-********************************************************************/
+/********************************************************************/
 
 /********************************************************************/
 footer {
-  position: absolute;
+  /* font-family: 'SUIT'; */
+  /* position: absolute; */
+  transform: translateY(40em);
+  /* padding-bottom: 145em; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 1.2em;
-}
-.logo--wrapper {
-}
-.logo {
-  font-family: 'MonteCarlo', cursive;
-  font-size: 5em;
-  color: var(--red);
+  /* justify-content: center; */
+  width: 30%;
+  height: 16em;
+  /* border: 2px solid rgb(136, 255, 0); */
+  z-index: 99;
 }
 
-.cap--wrapper {
+.footer__project {
+  font-family: 'MonteCarlo', cursive;
+  font-size: 5em;
+  color: var(--black);
+}
+
+.footer__credit {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.pastry-logo {
+.credit {
+  margin-left: 2em;
+}
+.artist {
+  font-size: 0.9em;
+}
+.copy {
+  font-family: 'SUIT';
+}
+.logo {
   display: flex;
   height: 10em;
 }

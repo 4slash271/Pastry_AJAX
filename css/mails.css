@@ -10,6 +10,7 @@
   /* background: radial-gradient(#DA4D4D 40%, #f19180ea 60%, #DA4D4D 80%) ; */
   border: 15px double var(--white);
   border-radius: 50%;
+  z-index: 10;
 }
 .mails__outer {
   display: flex;
@@ -28,7 +29,7 @@
     transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -37,7 +38,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  z-index: 99;
+  z-index: 30;
 }
 .mail__section {
   position: absolute;
@@ -60,4 +61,53 @@
 .mail:hover {
   transform-origin: 0% 75%;
   cursor: pointer;
+}
+.mail .stamp {
+  width: 1.5em;
+  height: 2em;
+  /* font-family: 0.5em; */
+  text-align: center;
+  padding: 0.7em 0.2em 0em 0.2em;
+  margin-top: 1em;
+  margin-left: 12em;
+
+  background-color: var(--white);
+  color: var(--black);
+  border: 4px dotted var(--black);
+}
+.mail span {
+  border: 2px solid red;
+}
+
+#mail1,
+#mail3,
+#mail6,
+#mail8,
+#mail12 {
+  background: linear-gradient(135deg, var(--white) 50%, var(--yellow) 100%);
+}
+#mail1 > .stamp,
+#mail3 > .stamp,
+#mail6 > .stamp,
+#mail8 > .stamp,
+#mail12 > .stamp {
+  background-color: var(--yellow);
+}
+#mail2,
+#mail4,
+#mail5,
+#mail7,
+#mail9,
+#mail10,
+#mail11 {
+  background: linear-gradient(135deg, var(--white) 50%, var(--blue) 100%);
+}
+#mail2 > .stamp,
+#mail4 > .stamp,
+#mail5 > .stamp,
+#mail7 > .stamp,
+#mail9 > .stamp,
+#mail10 > .stamp,
+#mail11 > .stamp {
+  background-color: var(--blue);
 }
