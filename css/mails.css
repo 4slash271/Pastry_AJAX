@@ -75,8 +75,22 @@
   color: var(--black);
   border: 4px dotted var(--black);
 }
+
 .mail span {
-  border: 2px solid red;
+  color: #888;
+  border: 1px solid#888;
+  padding: 0.1em;
+  background-color: var(--white);
+}
+.mail .sender {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.mail .receiver {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
 
 #mail1,
@@ -86,7 +100,9 @@
 #mail12 {
   background: linear-gradient(135deg, var(--white) 50%, var(--yellow) 100%);
 }
-#mail1 > .stamp,
+#mail1 > .stamp {
+  background-color: #ffffffe0;
+}
 #mail3 > .stamp,
 #mail6 > .stamp,
 #mail8 > .stamp,
